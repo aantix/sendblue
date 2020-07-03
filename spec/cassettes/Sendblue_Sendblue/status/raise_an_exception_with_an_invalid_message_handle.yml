@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sendblue.co/api/status?handle=xxxxxxx-e6f5-476d-b6bf-94f5892a7548
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sendblue.co
+      Sb-Api-Key-Id:
+      - 9015f50ef5ae0314dee0464616dbfd16
+      Sb-Api-Secret-Key:
+      - b212c3e429ba69be1d2d1e8b691325b3
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"18-P28HkWfmMWOzrrYnsV6XY8P3Z1Q"
+      X-Cloud-Trace-Context:
+      - c6914659e951f657f4ea6d8bb44b2d37
+      Date:
+      - Fri, 03 Jul 2020 01:24:48 GMT
+      Server:
+      - Google Frontend
+      Cache-Control:
+      - private
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '"Invalid Message Handle"'
+  recorded_at: Fri, 03 Jul 2020 01:24:46 GMT
+recorded_with: VCR 6.0.0

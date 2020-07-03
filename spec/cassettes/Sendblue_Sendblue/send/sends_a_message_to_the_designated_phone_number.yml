@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.sendblue.co/api/send-message
+    body:
+      encoding: UTF-8
+      string: '{"number":"14154812629","content":"Hello from SendBlue!"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sendblue.co
+      Sb-Api-Key-Id:
+      - 9015f50ef5ae0314dee0464616dbfd16
+      Sb-Api-Secret-Key:
+      - b212c3e429ba69be1d2d1e8b691325b3
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"9d-pZ1bf7DKPNwKbuX1I71JGLoz8WI"
+      X-Cloud-Trace-Context:
+      - 99300b5660265af4ffde413cb5eefb37
+      Date:
+      - Fri, 03 Jul 2020 01:17:52 GMT
+      Server:
+      - Google Frontend
+      Cache-Control:
+      - private
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"PENDING","message_handle":"a4ce7ca1-e6f5-476d-b6bf-94f5892a7548","message":"Timeout
+        waiting for message status, query status with message_handle"}'
+  recorded_at: Fri, 03 Jul 2020 01:17:51 GMT
+recorded_with: VCR 6.0.0
