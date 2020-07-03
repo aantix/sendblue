@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sendblue.co/api/status?handle=xxxxxxx-e6f5-476d-b6bf-94f5892a7548
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.sendblue.co
+      Sb-Api-Key-Id:
+      - 9015f50ef5ae0314dee0464616dbfd16
+      Sb-Api-Secret-Key:
+      - b212c3e429ba69be1d2d1e8b691325b3
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Powered-By:
+      - Express
+      Etag:
+      - W/"11-5H3lHDlho5II5JYE4lXJDqKi1BE"
+      X-Cloud-Trace-Context:
+      - b49099f5801c6b8a963821d1baeaf6bf
+      Date:
+      - Sat, 04 Jul 2020 16:13:40 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '17'
+    body:
+      encoding: UTF-8
+      string: Message not found
+  recorded_at: Sat, 04 Jul 2020 16:13:40 GMT
+recorded_with: VCR 6.0.0
